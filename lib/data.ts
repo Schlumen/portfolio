@@ -10,7 +10,7 @@ import djangoImg from "@/public/django.png";
 import myflixImg from "@/public/myflix.png";
 import rickbaseImg from "@/public/rickbase.png";
 import todoImg from "@/public/todo.png";
-import xintelligenceImg from "@/public/xintelligence.png";
+import xintelligenceImg from "@/public/x-intelligence.png";
 import cloudstorageImg from "@/public/cloud-storage.png";
 import meetImg from "@/public/meet.png";
 import pokedexImg from "@/public/pokedex.png";
