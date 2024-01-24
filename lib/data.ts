@@ -1,10 +1,19 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { RiComputerLine } from "react-icons/ri";
+import { MdOutlineSecurity } from "react-icons/md";
+import { GiRadioactive } from "react-icons/gi";
+import akanImg from "@/public/akan.png";
+import chatImg from "@/public/chat.png";
+import djangoImg from "@/public/django.png";
+import myflixImg from "@/public/myflix.png";
+import rickbaseImg from "@/public/rickbase.png";
+import todoImg from "@/public/todo.png";
+import xintelligenceImg from "@/public/xintelligence.png";
+import cloudstorageImg from "@/public/cloud-storage.png";
+import meetImg from "@/public/meet.png";
+import pokedexImg from "@/public/pokedex.png";
 
 export const links = [
   {
@@ -35,52 +44,125 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Co-Founder & Partner",
+    location: "Überlingen, Germany",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+      "I had my first company when I was 19 with which I helped other people with their computer problems and created websites for them.",
+    icon: React.createElement(RiComputerLine),
+    date: "2016 - 2017",
+  },
+  {
+    title: "Information Security Internship",
+    location: "Meersburg, Germany",
+    description:
+      "Establishment of an information security management system (ISMS) according to ISO 27001 together with the IT and QA Departments at Konzept Informationssysteme GmbH",
+    icon: React.createElement(MdOutlineSecurity),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Bachelor of Science",
+    location: "Furtwangen, Germany",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I graduated as the best of my semester after 3.5 years of studying Security and Safety Engineering.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017 - 2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Radiation Protection Engineer and Deputy Head of Group",
+    location: "Villigen, Switzerland",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Responsible Radiation Protection Expert according to the guidelines of the supervisory authorities and internal regulations in all controlled and supervised areas of the Paul Scherrer Institute.",
+    icon: React.createElement(GiRadioactive),
+    date: "2021 - 2023",
+  },
+  {
+    title: "Full-Stack Web Development Bootcamp",
+    location: "Waldshut-Tiengen, Germany",
+    description:
+      "I worked on several full-stack projects with the MERN stack and other frameworks and technologies throughout the CareerFoundry course and graduated after 9 months.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Freelance Full-Stack Web Developer",
+    location: "Waldshut-Tiengen, Germany",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2019 - 2021",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "MyFlix",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "This is a full-stack project with an API and Database as backend and a React single page application or an Angular application as frontend. User can register, edit their account, delete their account and add and remove movies from their list of favorites.",
+    tags: ["React", "Node.js", "MongoDB", "Bootstrap", "Angular"],
+    imageUrl: myflixImg,
   },
   {
-    title: "rmtDev",
+    title: "X Intelligence",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A beatuiful, simple and fully responsive website made for a client",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: xintelligenceImg,
   },
   {
-    title: "Word Analytics",
+    title: "ToDo List",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "This is a To-do list app based on the Eisenhower Matrix, designed to help you prioritize your tasks and maximize your productivity. It is a full-stack project where users can register, edit their account, delete their account, create notes, prioritize notes and delete notes.",
+    tags: ["React", "Node.js", "MongoDB", "CSS"],
+    imageUrl: todoImg,
+  },
+  {
+    title: "Rickbase",
+    description:
+      "This app shows a list of all characters from the Rick and Morty series loaded from an external API. If you click on a character a modal with the character details will open. ",
+    tags: ["HTML", "CSS", "TypeScript"],
+    imageUrl: rickbaseImg,
+  },
+  {
+    title: "Chat App",
+    description:
+      "This React Native Chat App allows users to choose their name and background color, enter the chat room and start chatting with their friends. Besides of writing text the users can also share their location and send photos.",
+    tags: ["JavaScript", "React Native", "Firebase"],
+    imageUrl: chatImg,
+  },
+  {
+    title: "Akan Name",
+    description:
+      "This project is a simple two page website that features the Akan names and culture. You can input your gender and date of birth and the app will show your Akan name.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: akanImg,
+  },
+  {
+    title: "Recipe App",
+    description:
+      "This is a recipe web app where users can log in, view and search recipes as well as see statistics about the recipes that came up during the search.",
+    tags: ["Python", "Django", "JavaScript"],
+    imageUrl: djangoImg,
+  },
+  {
+    title: "Cloud Storage",
+    description:
+      "This is a Google Drive Clone where users can create an account, log in, create folders and upload files. Users can also update their profile and use the forgot password method. This project is created with Google Firebase and React.",
+    tags: ["React", "Firebase", "JavaScript"],
+    imageUrl: cloudstorageImg,
+  },
+  {
+    title: "Meet",
+    description:
+      "This app will allow users to search for a city and get a list of events hosted in that city. This app was developed to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.",
+    tags: ["React", "Testing", "JavaScript"],
+    imageUrl: meetImg,
+  },
+  {
+    title: "Pokedex",
+    description:
+      "This app shows a list of all pokemons loaded from the RESTful Pokémon API. If you click on a pokemons name a modal with the pokemons picture and details will open.",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    imageUrl: pokedexImg,
   },
 ] as const;
 
@@ -89,19 +171,23 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "jQuery",
   "React",
+  "React Native",
+  "Angular",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Bootstrap",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
+  "MySQL",
   "Python",
   "Django",
   "Framer Motion",
+  "Firebase",
+  "AWS Lambda",
+  "C++",
 ] as const;
