@@ -97,37 +97,30 @@ export const projectsData = [
   {
     title: "MyFlix",
     description:
-      "This is a full-stack project with an API and Database as backend and a React single page application or an Angular application as frontend. User can register, edit their account, delete their account and add and remove movies from their list of favorites.",
+      "This is a full-stack project with backend and a React application as frontend. User can search and add movies to their list of favorites.",
     tags: ["React", "Node.js", "MongoDB", "Bootstrap", "Angular"],
     imageUrl: myflixImg,
   },
   {
-    title: "X Intelligence",
-    description:
-      "A beatuiful, simple and fully responsive website made for a client",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: xintelligenceImg,
-  },
-  {
     title: "ToDo List",
     description:
-      "This is a To-do list app based on the Eisenhower Matrix, designed to help you prioritize your tasks and maximize your productivity. It is a full-stack project where users can register, edit their account, delete their account, create notes, prioritize notes and delete notes.",
+      "This is a To-do list app based on the Eisenhower Matrix, designed to help you prioritize your tasks and maximize your productivity.",
     tags: ["React", "Node.js", "MongoDB", "CSS"],
     imageUrl: todoImg,
   },
   {
-    title: "Rickbase",
+    title: "X Intelligence",
     description:
-      "This app shows a list of all characters from the Rick and Morty series loaded from an external API. If you click on a character a modal with the character details will open. ",
-    tags: ["HTML", "CSS", "TypeScript"],
-    imageUrl: rickbaseImg,
+      "A beatuiful, simple and fully responsive website made for a client.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: xintelligenceImg,
   },
   {
-    title: "Chat App",
+    title: "Rickbase",
     description:
-      "This React Native Chat App allows users to choose their name and background color, enter the chat room and start chatting with their friends. Besides of writing text the users can also share their location and send photos.",
-    tags: ["JavaScript", "React Native", "Firebase"],
-    imageUrl: chatImg,
+      "This app shows a list of all characters from the Rick and Morty series loaded from an external API. If you click on a character the character details will open. ",
+    tags: ["HTML", "CSS", "TypeScript"],
+    imageUrl: rickbaseImg,
   },
   {
     title: "Akan Name",
@@ -137,23 +130,31 @@ export const projectsData = [
     imageUrl: akanImg,
   },
   {
+    title: "Chat App",
+    description:
+      "This React Native Chat App allows users to enter the chat room and start chatting with their friends. Users can also share their location and send photos.",
+    tags: ["JavaScript", "React Native", "Firebase"],
+    imageUrl: chatImg,
+  },
+  {
+    title: "Cloud Storage",
+    description:
+      "This is a Google Drive Clone where users can create an account, create folders and upload files. Users can also update their profile and use the forgot password method.",
+    tags: ["React", "Firebase", "JavaScript"],
+    imageUrl: cloudstorageImg,
+  },
+  {
     title: "Recipe App",
     description:
       "This is a recipe web app where users can log in, view and search recipes as well as see statistics about the recipes that came up during the search.",
     tags: ["Python", "Django", "JavaScript"],
     imageUrl: djangoImg,
   },
-  {
-    title: "Cloud Storage",
-    description:
-      "This is a Google Drive Clone where users can create an account, log in, create folders and upload files. Users can also update their profile and use the forgot password method. This project is created with Google Firebase and React.",
-    tags: ["React", "Firebase", "JavaScript"],
-    imageUrl: cloudstorageImg,
-  },
+
   {
     title: "Meet",
     description:
-      "This app will allow users to search for a city and get a list of events hosted in that city. This app was developed to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.",
+      "This app will allow users to search for a city and get a list of events hosted in that city. This app was developed to build a serverless, progressive web application with React.",
     tags: ["React", "Testing", "JavaScript"],
     imageUrl: meetImg,
   },
