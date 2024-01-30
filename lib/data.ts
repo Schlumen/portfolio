@@ -1,4 +1,5 @@
 import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
@@ -80,16 +81,16 @@ export const experiencesData = [
     location: "Waldshut-Tiengen, Germany",
     description:
       "I worked on several full-stack projects with the MERN stack and other frameworks and technologies throughout the CareerFoundry course and graduated after 9 months.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(FaReact),
     date: "2022 - 2023",
   },
   {
     title: "Freelance Full-Stack Web Developer",
     location: "Waldshut-Tiengen, Germany",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2019 - 2021",
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to freelance opportunities.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - today",
   },
 ] as const;
 
