@@ -15,11 +15,12 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      viewport={{ once: true }}>
+      viewport={{ once: true }}
+    >
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-700 -mt-5">
         Please contact me directly at{" "}
@@ -31,7 +32,7 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col"
-        action={async (formData) => {
+        action={async formData => {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -40,7 +41,8 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully");
-        }}>
+        }}
+      >
         <input
           type="email"
           name="senderEmail"
