@@ -4,9 +4,11 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const { t } = useTranslation("about");
 
   return (
     <motion.section
@@ -15,20 +17,15 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about">
-      <SectionHeading>About me</SectionHeading>
+      id="about"
+    >
+      <SectionHeading>{t("about")}</SectionHeading>
       <p className="mb-3">
-        I began <span className="underline">learning programming</span> at the
-        age of 16 at a student research center. Together with my friends, I
-        participated in several projects for "Jugend forscht", a student and
-        youth competition in the field of natural sciences and technology in
-        Germany. With one particular project, we won the national prize for the{" "}
-        <span className="font-medium">best interdisciplinary work</span>. In
-        this project I was responsible for writing the software for a prototype
-        of a process engineering plant. had my first company when I was 19 with
-        which I helped other people with their{" "}
-        <span className="italic">computer problems</span> and created{" "}
-        <span className="italic">websites</span> for them.
+        {t("start")} <span className="underline">{t("learn")}</span> {t("jufo")}{" "}
+        <span className="font-medium">{t("best")}</span> {t("company")}{" "}
+        <span className="italic">{t("pc")}</span> {t("created")}{" "}
+        <span className="italic">{t("websites")} </span>
+        {t("them")}.
       </p>
       <p className="mb-3">
         After completing school, I pursued a Bachelor of Science in{" "}
