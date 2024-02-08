@@ -24,11 +24,13 @@ export default function LanguageChanger() {
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
 
     // redirect to the new locale path
+
     if (currentLocale === i18nConfig.defaultLocale) {
-      router.push("/" + newLocale + currentPathname);
+      router.push("/" + newLocale + currentPathname, { scroll: false });
     } else {
       router.push(
-        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
+        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`),
+        { scroll: false }
       );
     }
 
