@@ -42,7 +42,7 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email sent successfully");
+          toast.success(t("success"));
         }}
       >
         <input
