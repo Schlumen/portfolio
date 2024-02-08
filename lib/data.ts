@@ -43,7 +43,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesDataEn = [
   {
     title: "Co-Founder & Partner",
     location: "Überlingen, Germany",
@@ -64,7 +64,7 @@ export const experiencesData = [
     title: "Bachelor of Science",
     location: "Furtwangen, Germany",
     description:
-      "I graduated as the best of my semester after 3.5 years of studying Security and Safety Engineering.",
+      "I graduated as the best of my semester after 3.5 years of studying Security & Safety Engineering.",
     icon: React.createElement(LuGraduationCap),
     date: "2017 - 2020",
   },
@@ -91,6 +91,57 @@ export const experiencesData = [
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to freelance opportunities.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - today",
+  },
+] as const;
+
+export const experiencesDataDe = [
+  {
+    title: "Mitgründer & Gesellschafter",
+    location: "Überlingen, Deutschland",
+    description:
+      "Ich hatte meine erste Firma mit 19 Jahren, mit der ich anderen Menschen bei ihren Computerproblemen half und Webseiten für sie erstellte.",
+    icon: React.createElement(RiComputerLine),
+    date: "2016 - 2017",
+  },
+  {
+    title: "Praktikum Informationssicherheit",
+    location: "Meersburg, Deutschland",
+    description:
+      "Aufbau eines Informationssicherheitsmanagementsystems (ISMS) gemäß ISO 27001 zusammen mit den IT- und QM-Abteilungen bei Konzept Informationssysteme GmbH.",
+    icon: React.createElement(MdOutlineSecurity),
+    date: "2019",
+  },
+  {
+    title: "Bachelor of Science",
+    location: "Furtwangen, Deutschland",
+    description:
+      "Ich schloss mein Studium in Security & Safety Engineering nach 3,5 Jahren als Bester meines Semesters ab.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017 - 2020",
+  },
+  {
+    title: "Strahlenschutzingenieur und stellvertretender Gruppenleiter",
+    location: "Villigen, Schweiz",
+    description:
+      "Verantwortlicher Strahlenschutzexperte gemäß den Richtlinien der Aufsichtsbehörden und internen Vorschriften in allen kontrollierten und überwachten Bereichen des Paul Scherrer Instituts.",
+    icon: React.createElement(GiRadioactive),
+    date: "2021 - 2023",
+  },
+  {
+    title: "Full-Stack Web Development Bootcamp",
+    location: "Waldshut-Tiengen, Deutschland",
+    description:
+      "Ich arbeitete an mehreren Full-Stack-Projekten mit dem MERN-Stack und anderen Frameworks und Technologien während des CareerFoundry Kurses und schloss diesen nach 9 Monaten ab.",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Freelance Full-Stack Webentwickler",
+    location: "Waldshut-Tiengen, Deutschland",
+    description:
+      "Ich bin Full-Stack-Entwickler, der als Freelancer arbeitet. Mein Stack umfasst React, Next.js, TypeScript, Tailwind und MongoDB. Ich bin offen für freelance Jobangebote.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - heute",
   },
 ] as const;
 

@@ -2,10 +2,12 @@ import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useInView } from "react-intersection-observer";
-import { experiencesData } from "@/lib/data";
+import { experiencesDataEn, experiencesDataDe } from "@/lib/data";
 import { useTheme } from "@/context/theme-context";
 
-type TimelineElementProps = { item: (typeof experiencesData)[number] };
+type TimelineElementProps = {
+  item: (typeof experiencesDataEn)[number] | (typeof experiencesDataDe)[number];
+};
 
 export default function TimelineElement({ item }: TimelineElementProps) {
   const { theme } = useTheme();
@@ -39,7 +41,7 @@ export default function TimelineElement({ item }: TimelineElementProps) {
           fontSize: "1.5rem",
         }}
       >
-        <h3 className="font-semibold capitalize">{item.title}</h3>
+        <h3 className="font-semibold">{item.title}</h3>
         <p className="font-normal !mt-0">{item.location}</p>
         <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
           {item.description}
