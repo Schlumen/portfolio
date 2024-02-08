@@ -94,13 +94,15 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsDataEn = [
   {
     title: "MyFlix",
     description:
       "This is a full-stack project with backend and a React application as frontend. User can search and add movies to their list of favorites.",
     tags: ["React", "Node.js", "MongoDB", "Bootstrap", "Angular"],
     imageUrl: myflixImg,
+    liveUrl: "https://myflix.haendler.dev/",
+    githubUrl: "https://github.com/Schlumen/movie-api",
   },
   {
     title: "ToDo List",
@@ -108,6 +110,8 @@ export const projectsData = [
       "This is a To-do list app based on the Eisenhower Matrix, designed to help you prioritize your tasks and maximize your productivity.",
     tags: ["React", "Node.js", "MongoDB", "CSS"],
     imageUrl: todoImg,
+    liveUrl: "https://todoapp-afqp.onrender.com/",
+    githubUrl: "https://github.com/Schlumen/todo-crud-app",
   },
   {
     title: "X Intelligence",
@@ -115,6 +119,8 @@ export const projectsData = [
       "A beatuiful, simple and fully responsive website made for a client.",
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: xintelligenceImg,
+    liveUrl: "https://x-intelligence.de/",
+    githubUrl: "",
   },
   {
     title: "Rickbase",
@@ -122,6 +128,8 @@ export const projectsData = [
       "This app shows a list of all characters from the Rick and Morty series loaded from an external API. If you click on a character the character details will open. ",
     tags: ["HTML", "CSS", "TypeScript"],
     imageUrl: rickbaseImg,
+    liveUrl: "https://schlumen.github.io/rickbase/",
+    githubUrl: "https://github.com/Schlumen/rickbase",
   },
   {
     title: "Akan Name",
@@ -129,6 +137,8 @@ export const projectsData = [
       "This project is a simple two page website that features the Akan names and culture. You can input your gender and date of birth and the app will show your Akan name.",
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: akanImg,
+    liveUrl: "https://schlumen.github.io/akan-name-generator/",
+    githubUrl: "https://github.com/Schlumen/akan-name-generator",
   },
   {
     title: "Chat App",
@@ -136,6 +146,8 @@ export const projectsData = [
       "This React Native Chat App allows users to enter the chat room and start chatting with their friends. Users can also share their location and send photos.",
     tags: ["JavaScript", "React Native", "Firebase"],
     imageUrl: chatImg,
+    liveUrl: "",
+    githubUrl: "https://github.com/Schlumen/chat-app",
   },
   {
     title: "Cloud Storage",
@@ -143,6 +155,8 @@ export const projectsData = [
       "This is a Google Drive Clone where users can create an account, create folders and upload files. Users can also update their profile and use the forgot password method.",
     tags: ["React", "Firebase", "JavaScript"],
     imageUrl: cloudstorageImg,
+    liveUrl: "https://cloud-storage-a3aab.web.app/",
+    githubUrl: "https://github.com/Schlumen/cloud-storage",
   },
   {
     title: "Recipe App",
@@ -150,6 +164,8 @@ export const projectsData = [
       "This is a recipe web app where users can log in, view and search recipes as well as see statistics about the recipes that came up during the search.",
     tags: ["Python", "Django", "JavaScript"],
     imageUrl: djangoImg,
+    liveUrl: "https://django-recipe-app-d9f628d5ba3f.herokuapp.com/",
+    githubUrl: "https://github.com/Schlumen/django-app",
   },
 
   {
@@ -158,6 +174,8 @@ export const projectsData = [
       "This app will allow users to search for a city and get a list of events hosted in that city. This app was developed to build a serverless, progressive web application with React.",
     tags: ["React", "Testing", "JavaScript"],
     imageUrl: meetImg,
+    liveUrl: "https://schlumen.github.io/meet/",
+    githubUrl: "https://github.com/Schlumen/meet",
   },
   {
     title: "Pokedex",
@@ -165,6 +183,102 @@ export const projectsData = [
       "This app shows a list of all pokemons loaded from the RESTful Pokémon API. If you click on a pokemons name a modal with the pokemons picture and details will open.",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     imageUrl: pokedexImg,
+    liveUrl: "https://schlumen.github.io/simple-js-app/",
+    githubUrl: "https://github.com/Schlumen/simple-js-app",
+  },
+] as const;
+
+export const projectsDataDe = [
+  {
+    title: "MyFlix",
+    description:
+      "Dies ist ein Full-Stack-Projekt mit Backend und einer React-Anwendung als Frontend. Benutzer können nach Filmen suchen und diese zu ihrer Liste der Favoriten hinzufügen.",
+    tags: ["React", "Node.js", "MongoDB", "Bootstrap", "Angular"],
+    imageUrl: myflixImg,
+    liveUrl: "https://myflix.haendler.dev/",
+    githubUrl: "https://github.com/Schlumen/movie-api",
+  },
+  {
+    title: "ToDo Liste",
+    description:
+      "Diese To-Do App basiert auf der Eisenhower-Matrix und hilft Ihnen bei der Priorisierung Ihrer Aufgaben.",
+    tags: ["React", "Node.js", "MongoDB", "CSS"],
+    imageUrl: todoImg,
+    liveUrl: "https://todoapp-afqp.onrender.com/",
+    githubUrl: "https://github.com/Schlumen/todo-crud-app",
+  },
+  {
+    title: "X Intelligence",
+    description:
+      "Eine schöne, einfache und vollständig responsive Website, die für einen Kunden erstellt wurde.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: xintelligenceImg,
+    liveUrl: "https://x-intelligence.de/",
+    githubUrl: "",
+  },
+  {
+    title: "Rickbase",
+    description:
+      "Diese App zeigt alle Charaktere aus der Rick and Morty Serie. Wenn Sie auf einen Charakter klicken, werden die Details des Charakters geöffnet.",
+    tags: ["HTML", "CSS", "TypeScript"],
+    imageUrl: rickbaseImg,
+    liveUrl: "https://schlumen.github.io/rickbase/",
+    githubUrl: "https://github.com/Schlumen/rickbase",
+  },
+  {
+    title: "Akan Name",
+    description:
+      "Diese Seite zeigt die Akan-Namen und die Kultur. Sie können Ihr Geschlecht und Ihr Geburtsdatum eingeben, und die App zeigt Ihnen Ihren Akan-Namen.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: akanImg,
+    liveUrl: "https://schlumen.github.io/akan-name-generator/",
+    githubUrl: "https://github.com/Schlumen/akan-name-generator",
+  },
+  {
+    title: "Chat App",
+    description:
+      "Diese Chat-App ermöglicht es Benutzern, den Chatraum zu betreten und mit ihren Freunden zu chatten, sowie Standort und Fotos zu teilen.",
+    tags: ["JavaScript", "React Native", "Firebase"],
+    imageUrl: chatImg,
+    liveUrl: "",
+    githubUrl: "https://github.com/Schlumen/chat-app",
+  },
+  {
+    title: "Cloud Storage",
+    description:
+      "Dies ist ein Google Drive-Klon, bei dem Benutzer ein Konto erstellen, Ordner erstellen und Dateien hochladen können. Benutzer können auch ihr Profil bearbeiten.",
+    tags: ["React", "Firebase", "JavaScript"],
+    imageUrl: cloudstorageImg,
+    liveUrl: "https://cloud-storage-a3aab.web.app/",
+    githubUrl: "https://github.com/Schlumen/cloud-storage",
+  },
+  {
+    title: "Rezept App",
+    description:
+      "Dies ist eine Rezept-Web-App, bei der Benutzer Rezepte anzeigen und suchen sowie Statistiken zu den Rezepten sehen können.",
+    tags: ["Python", "Django", "JavaScript"],
+    imageUrl: djangoImg,
+    liveUrl: "https://django-recipe-app-d9f628d5ba3f.herokuapp.com/",
+    githubUrl: "https://github.com/Schlumen/django-app",
+  },
+
+  {
+    title: "Meet",
+    description:
+      "Diese App ermöglicht es Benutzern, nach einer Stadt zu suchen und eine Liste der in dieser Stadt stattfindenden Veranstaltungen zu erhalten.",
+    tags: ["React", "Testing", "JavaScript"],
+    imageUrl: meetImg,
+    liveUrl: "https://schlumen.github.io/meet/",
+    githubUrl: "https://github.com/Schlumen/meet",
+  },
+  {
+    title: "Pokedex",
+    description:
+      "Diese App zeigt alle Pokémon, von der RESTful Pokémon API. Bei Klick auf den Namen eines Pokémon, werden die Details geöffnet.",
+    tags: ["HTML", "CSS", "jQuery", "JavaScript", "Bootstrap"],
+    imageUrl: pokedexImg,
+    liveUrl: "https://schlumen.github.io/simple-js-app/",
+    githubUrl: "https://github.com/Schlumen/simple-js-app",
   },
 ] as const;
 

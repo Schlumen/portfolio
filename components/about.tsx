@@ -28,31 +28,20 @@ export default function About() {
         {t("them")}.
       </p>
       <p className="mb-3">
-        After completing school, I pursued a Bachelor of Science in{" "}
-        <span className="font-medium">Security and Safety Engineering</span> at
-        the Furtwangen University. Following that, I worked at the Paul Scherrer
-        Institute, the largest research institute in Switzerland, as a{" "}
-        <span className="font-medium">radiation protection engineer</span> for
-        over two years. I had many exciting tasks and responsibilities and was
-        learning a lot about{" "}
-        <span className="italic">radiation protection</span>, but finally
-        slipped into a routine where I felt that I was not able to fully develop
-        my potential and use all of my{" "}
-        <span className="italic">technical and analytical skills</span>, so I
-        eventually decided to shift my career towards the tech industry and turn
-        my hobby and <span className="underline">passion of programming</span>{" "}
-        into my profession. I enrolled in the{" "}
-        <span className="font-medium">Full-Stack Web Development</span> course
-        at CareerFoundry, and have discovered that this is{" "}
-        <span className="italic">exactly what I want to do</span>.
+        {t("bachelor")}{" "}
+        <span className="font-medium">Security & Safety Engineering</span>{" "}
+        {t("hfu_psi")} <span className="font-medium">{t("rpe")}</span>{" "}
+        {t("tasks")} <span className="italic">{t("rp")}</span>
+        {t("routine")} <span className="italic">{t("skills")}</span>
+        {t("tech")} <span className="underline">{t("passion")}</span>{" "}
+        {t("enroll")}{" "}
+        <span className="font-medium">Full-Stack Web Development</span>{" "}
+        {t("cf")} <span className="italic">{t("do")}</span>.
       </p>
       <p>
-        My core stack is{" "}
-        <span className="font-medium">React, Next.js, Node.js and MongoDB</span>
-        . I offer Backend, Frontend, Full-Stack and Serverless Development. I am
-        currently looking for <span className="italic">freelance jobs</span>{" "}
-        where I can create beautiful frontends, efficient backends or functional
-        full-stack projects..
+        {t("stack")} <span className="font-medium">{t("react")}</span>.{" "}
+        {t("offer")} <span className="italic">{t("jobs")}</span> {t("projects")}
+        .
       </p>
     </motion.section>
   );

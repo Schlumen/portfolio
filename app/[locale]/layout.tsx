@@ -18,7 +18,7 @@ export const metadata = {
   description: "Lumen is a full-stack web developer from Germany",
 };
 
-const i18nNamespaces = ["data", "intro", "about"];
+const i18nNamespaces = ["intro", "about", "headings"];
 
 export default async function RootLayout({
   children,
