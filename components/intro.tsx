@@ -9,10 +9,12 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslation } from "react-i18next";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { t } = useTranslation("intro");
 
   return (
     <section
@@ -62,11 +64,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Lumen.</span> I'm a{" "}
-        <span className="font-bold">full-stack web developer</span> from Germany
-        with a background in <span className="font-bold">engineering</span>. I
-        enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React, Next.js and Node.js</span>
+        <span className="font-bold">{t("hi")}.</span> {t("im")}{" "}
+        <span className="font-bold">{t("webdev")}</span> {t("germany")}{" "}
+        <span className="font-bold">{t("engineering")}</span>. {t("enjoy")}{" "}
+        <span className="italic">{t("sites")}</span>. {t("focus")}{" "}
+        <span className="underline">{t("next")}</span>.
       </motion.h1>
 
       <motion.div
@@ -83,7 +85,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here
+          {t("contact")}{" "}
           <BsArrowRight className="opacity-80 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -92,7 +94,7 @@ export default function Intro() {
           href="/Lumen_CV.pdf"
           download
         >
-          Download CV{" "}
+          {t("dl")}{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
         </a>
 

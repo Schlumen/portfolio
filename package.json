@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -18,12 +18,17 @@
     "clsx": "^2.1.0",
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
+    "flag-icons": "^7.1.0",
     "framer-motion": "^11.0.3",
+    "i18next": "^23.8.2",
+    "i18next-resources-to-backend": "^1.2.0",
     "next": "14.1.0",
+    "next-i18n-router": "^5.2.1",
     "postcss": "8.4.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
+    "react-i18next": "^14.0.5",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.5.3",
     "react-vertical-timeline-component": "^3.6.0",
@@ -32,6 +37,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "i18nexus-cli": "^3.3.0"
   }
 }
