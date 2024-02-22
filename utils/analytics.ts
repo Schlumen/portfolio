@@ -1,6 +1,5 @@
 import { redis } from "@/lib/redis";
 import { getDate } from "@/utils";
-import { parse } from "date-fns";
 
 type AnalyticsArgs = {
   retention?: number;
@@ -26,11 +25,9 @@ export class Analytics {
       key += `::${getDate()}`;
     }
 
-    console.log("Tracking key: " + key);
+    // db call to persist this event THIS LINE DOES NOT WORK
+    await redis.hincrby(key, JSON.stringify(event), 1);
 
-    // db call to persist this event
-    const after = await redis.hincrby(key, JSON.stringify(event), 1);
-    console.log("After: " + after);
     if (!opts?.persist) {
       await redis.expire(key, this.retention);
     }
