@@ -29,6 +29,10 @@ export class Analytics {
     console.log("Tracking key: " + key);
 
     // db call to persist this event
+    const ping = await redis.ping();
+    console.log("Ping: " + ping);
+    const res = await redis.hgetall<Record<string, string>>(key);
+    console.log("Res: " + JSON.stringify(res));
     const after = await redis.hincrby(key, JSON.stringify(event), 1);
     console.log("After: " + after);
     if (!opts?.persist) {
