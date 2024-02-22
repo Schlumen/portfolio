@@ -4,15 +4,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { analytics } from "./utils/analytics";
 
 export function middleware(req: NextRequest) {
-  console.log("middleware", req.nextUrl.pathname);
-
   if (req.nextUrl.pathname === "/") {
     try {
       analytics.track("pageview", {
         page: "/",
         country: req.geo?.country,
       });
-      console.log("pageview tracked");
     } catch (error) {
       // fail silently
       console.error(error);
@@ -25,7 +22,6 @@ export function middleware(req: NextRequest) {
         page: "/",
         country: req.geo?.country,
       });
-      console.log("cvdownload tracked");
     } catch (error) {
       // fail silently
       console.error(error);
