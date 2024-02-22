@@ -4,6 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { analytics } from "./utils/analytics";
 
 export function middleware(req: NextRequest) {
+  console.log("middleware", req.nextUrl.pathname);
+
   if (req.nextUrl.pathname === "/") {
     try {
       analytics.track("pageview", {
