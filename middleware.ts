@@ -2,14 +2,15 @@ import { i18nRouter } from "next-i18n-router";
 import i18nConfig from "./i18nConfig";
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const API_URL = process.env.API_URL!;
   const path = req.nextUrl.pathname;
   const auth = process.env.API_SECRET!;
   const country = req.geo?.country;
 
   if (path === "/") {
-    fetch(API_URL, {
+    console.log("Making fetch request for /");
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,9 +24,11 @@ export function middleware(req: NextRequest) {
         },
       }),
     });
+    console.log("Response from /", JSON.stringify(response.json()));
   }
 
   if (path === "/Lumen_CV.pdf") {
+    console.log("Making fetch request for /Lumen_CV.pdf");
     fetch(API_URL, {
       method: "POST",
       headers: {
