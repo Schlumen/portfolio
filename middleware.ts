@@ -9,8 +9,7 @@ export async function middleware(req: NextRequest) {
   const country = req.geo?.country;
 
   if (path === "/") {
-    console.log("Making fetch request for /");
-    const response = await fetch(API_URL, {
+    await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,12 +23,10 @@ export async function middleware(req: NextRequest) {
         },
       }),
     });
-    console.log("Response from /", JSON.stringify(response.json()));
   }
 
   if (path === "/Lumen_CV.pdf") {
-    console.log("Making fetch request for /Lumen_CV.pdf");
-    fetch(API_URL, {
+    await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
