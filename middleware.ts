@@ -1,31 +1,45 @@
 import { i18nRouter } from "next-i18n-router";
 import i18nConfig from "./i18nConfig";
 import { NextRequest, NextResponse } from "next/server";
-import { analytics } from "./utils/analytics";
 
 export function middleware(req: NextRequest) {
-  if (req.nextUrl.pathname === "/") {
-    try {
-      analytics.track("pageview", {
-        page: "/",
-        country: req.geo?.country,
-      });
-    } catch (error) {
-      // fail silently
-      console.error(error);
-    }
+  const API_URL = process.env.API_URL!;
+  const path = req.nextUrl.pathname;
+  const auth = process.env.API_SECRET!;
+  const country = req.geo?.country;
+
+  if (path === "/") {
+    fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: auth,
+      },
+      body: JSON.stringify({
+        namespace: "pageview",
+        event: {
+          page: "/",
+          country,
+        },
+      }),
+    });
   }
 
-  if (req.nextUrl.pathname === "/Lumen_CV.pdf") {
-    try {
-      analytics.track("cvdownload", {
-        page: "/",
-        country: req.geo?.country,
-      });
-    } catch (error) {
-      // fail silently
-      console.error(error);
-    }
+  if (path === "/Lumen_CV.pdf") {
+    fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: auth,
+      },
+      body: JSON.stringify({
+        namespace: "cvdownload",
+        event: {
+          page: "/",
+          country,
+        },
+      }),
+    });
     return NextResponse.next();
   }
 
